@@ -10,3 +10,4 @@
 * 8-concat_edges.py: print object-oriented programming with Python, followed by a new line
 * 9-easter_egg.py: write a script that prints “The Zen of Python”, by TimPeters
 * 100-write.py: write a script that prints a sentence using write
+* 101-compile: write a script that compiles a Python script file
