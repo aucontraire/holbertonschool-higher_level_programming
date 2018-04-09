@@ -11,3 +11,4 @@
 * 9-easter_egg.py: write a script that prints “The Zen of Python”, by TimPeters
 * 100-write.py: write a script that prints a sentence using write
 * 101-compile: write a script that compiles a Python script file
+* 102-magic_calculation.py: write a function def magic_calculation(a, b): that does exactly the same as the following Python bytecode
