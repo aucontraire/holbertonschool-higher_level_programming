@@ -7,3 +7,4 @@
 * 5-print_string.py: print 3 times a string stored in the variable str, followed by its first 9 characters
 * 6-concat.py: print Welcome to Holberton School!
 * 7-edges.py: write a script that prints portions of strings
+* 8-concat_edges.py: print object-oriented programming with Python, followed by a new line
