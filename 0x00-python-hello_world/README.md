@@ -5,3 +5,4 @@
 * 3-print_number.py: complete this source code in order to print the integer
 * 4-print_float.py: print the float stored in the variable number with a precision of 2 digits
 * 5-print_string.py: print 3 times a string stored in the variable str, followed by its first 9 characters
+* 6-concat.py: print Welcome to Holberton School!
