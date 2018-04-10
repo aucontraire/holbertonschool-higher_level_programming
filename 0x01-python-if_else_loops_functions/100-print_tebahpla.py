@@ -7,4 +7,4 @@ for n in range(122, 96, -1):
         nc = n
     else:
         nc = n - 32
-    print(chr(nc), end='')
+    print("{}".format(chr(nc)), end='')
