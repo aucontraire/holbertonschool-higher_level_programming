@@ -2,9 +2,10 @@
 
 
 def print_low_alpha_ex():
-    for c in 'abcdefghijklmnopqrstuvwxyz':
-        if c != 'q' and c != 'e':
-            print('{}'.format(c), end='')
+    for n in range(97, 123):
+        if n != 101 and n != 113:
+            print('{}'.format(chr(n)), end='')
+
 
 if __name__ == '__main__':
     print_low_alpha_ex()
