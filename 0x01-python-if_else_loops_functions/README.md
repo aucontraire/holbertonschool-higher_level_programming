@@ -3,3 +3,4 @@
 * 1-last_digit.py: script that prints the last digit of the number stored in the variable number
 * 2-print_alphabet.py: script that prints the alphabet, in lowercase, not followed by a new line
 * 3-print_alphabt.py: script that prints the alphabet, in lowercase, except q and e
+* 4-print_hexa.py: script that prints all numbers from 0 to 98 in decimal and in hexadecimal
