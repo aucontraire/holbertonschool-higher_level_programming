@@ -12,3 +12,4 @@
 * 10-add.py: function that adds two integers and returns the result
 * 11-pow.py: function that computes a to the power of b and return the value
 * 12-fizzbuzz.py: function that prints the numbers from 1 to 100 separated by a space
+* 100-print_tebahpla.py: prints the alphabet, in reverse order, alternating lowercase and uppercase
