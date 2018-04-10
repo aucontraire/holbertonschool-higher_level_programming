@@ -10,7 +10,10 @@ def get_last_digit(number):
     if number >= 0:
         return number % 10
     else:
-        return -10 + (number % 10)
+        if (number % 10) != 0:
+            return -10 + (number % 10)
+        else:
+            return 0
 
 
 def print_last_digit(last_digit):
