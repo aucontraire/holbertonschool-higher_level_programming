@@ -11,3 +11,4 @@
 * 9-print_last_digit.py: function that prints the last digit of a number
 * 10-add.py: function that adds two integers and returns the result
 * 11-pow.py: function that computes a to the power of b and return the value
+* 12-fizzbuzz.py: function that prints the numbers from 1 to 100 separated by a space
