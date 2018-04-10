@@ -3,7 +3,8 @@ import random
 
 
 def get_randn():
-    return random.randint(-10000, 10000)
+    number = random.randint(-10000, 10000)
+    return number
 
 
 def get_last_digit(number):
