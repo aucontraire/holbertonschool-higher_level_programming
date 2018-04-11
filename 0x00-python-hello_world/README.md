@@ -9,6 +9,7 @@
 * 7-edges.py: write a script that prints portions of strings
 * 8-concat_edges.py: print object-oriented programming with Python, followed by a new line
 * 9-easter_egg.py: write a script that prints “The Zen of Python”, by TimPeters
+* 10-check_cycle.c, lists.h: function in C that checks if a singly linked list has a cycle in it
 * 100-write.py: write a script that prints a sentence using write
 * 101-compile: write a script that compiles a Python script file
 * 102-magic_calculation.py: write a function def magic_calculation(a, b): that does exactly the same as the following Python bytecode
