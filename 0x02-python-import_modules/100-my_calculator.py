@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-import sys
-from calculator_1 import add, sub, mul, div
 
 
 if __name__ == '__main__':
+    import sys
+    from calculator_1 import add, sub, mul, div
+
     if len(sys.argv) != 4:
         print('Usage: {:s} <a> <operator> <b>'.format(sys.argv[0]))
         sys.exit(1)
