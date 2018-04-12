@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-eval("print('#pythoniscool')")
+import pythoniscool
