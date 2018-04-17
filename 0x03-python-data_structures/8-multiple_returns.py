@@ -2,10 +2,11 @@
 
 
 def multiple_returns(sentence):
-    sent_len = len(sentence)
-    if sent_len == 0:
-        return (sent_len, None)
-    return (sent_len, sentence[0])
+    if sentence != None:
+        sent_len = len(sentence)
+        if sent_len == 0:
+            return (sent_len, None)
+        return (sent_len, sentence[0])
 
 
 if __name__ == '__main__':
