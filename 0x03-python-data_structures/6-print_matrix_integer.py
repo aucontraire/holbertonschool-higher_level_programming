@@ -2,7 +2,7 @@
 
 
 def print_matrix_integer(matrix=[[]]):
-    if matrix is not None:
+    if len(matrix[0]) != 0:
         rows = len(matrix)
         columns = len(matrix[0])
         for r in range(rows):
