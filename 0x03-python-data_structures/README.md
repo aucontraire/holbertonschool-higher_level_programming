@@ -9,3 +9,4 @@
 * 7-add_tuple.py: function that adds 2 tuples
 * 8-multiple_returns.py: function that returns a tuple with the length of a string and its first character
 * 9-max_integer.py: function that finds the biggest integer of a list
+* 10-divisible_by_2.py: function that finds all multiples of 2 in a list
