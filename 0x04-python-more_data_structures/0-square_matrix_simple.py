@@ -12,6 +12,8 @@ def square_matrix_simple(matrix=[]):
                     sq_matrix[r][c] = matrix[r][c] ** 2
 
             return sq_matrix
+    else:
+        return None
 
 
 if __name__ == '__main__':
