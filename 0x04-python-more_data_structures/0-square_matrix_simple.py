@@ -2,19 +2,7 @@
 
 
 def square_matrix_simple(matrix=[]):
-    if matrix is not None:
-        rows = len(matrix)
-        columns = len(matrix[0])
-        if columns != 0:
-            sq_matrix = [[0 for i in range(rows)] for j in range(columns)]
-            for r in range(rows):
-                for c in range(columns):
-                    sq_matrix[r][c] = matrix[r][c] ** 2
-
-            return sq_matrix
-    else:
-        return None
-
+    return list(map(lambda x: list(map(lambda y: y ** 2, x)), matrix))
 
 if __name__ == '__main__':
     matrix = [
