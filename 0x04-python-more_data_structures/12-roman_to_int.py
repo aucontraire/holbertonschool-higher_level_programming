@@ -2,7 +2,7 @@
 
 
 def roman_to_int(roman_string):
-    if roma_string is not None:
+    if roman_string is not None or type(roman_string) == str:
         rom_dict = {
             'I': 1,
             'V': 5,
@@ -23,6 +23,7 @@ def roman_to_int(roman_string):
                 total += rom_dict[c]
                 prev = rom_dict[c]
         return total
+    return 0
 
 
 if __name__ == '__main__':
