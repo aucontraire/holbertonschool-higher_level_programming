@@ -17,11 +17,10 @@ def roman_to_int(roman_string):
         prev = 1001
         for c in roman_string:
             if rom_dict[c] > prev:
-                total += rom_dict[c]
-                total -= prev * 2
+                total += rom_dict[c] - (prev * 2)
             else:
                 total += rom_dict[c]
-                prev = rom_dict[c]
+            prev = rom_dict[c]
         return total
     return 0
 
