@@ -5,15 +5,15 @@ def safe_print_division(a, b):
     quotient = 0
 
     try:
-        q = a / b
+        quotient = a / b
     except ZeroDivisionError:
-        q = None
+        quotient = None
     except TypeError:
-        q = None
+        quotient = None
     finally:
-        print('Inside result: {}'.format(q))
+        print('Inside result: {}'.format(quotient))
 
-    return q
+    return quotient
 
 
 if __name__ == '__main__':
