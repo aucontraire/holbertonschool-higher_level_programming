@@ -4,21 +4,17 @@
 def safe_print_list_integers(my_list=[], x=0):
     i = 0
     count = 0
-    while True:
+    for i in range(x):
         try:
             print('{:d}'.format(my_list[i]), end='')
-            i += 1
             count += 1
-            if i == x:
-                print()
-                return count
         except ValueError:
-            i += 1
+            pass
         except TypeError:
-            i += 1
-        except IndexError:
-            print()
-            return count
+            pass
+
+    print()
+    return count
 
 
 if __name__ == '__main__':
