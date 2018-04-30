@@ -10,6 +10,10 @@ def safe_print_integer_err(value):
         err = "Exception: " + str(err) + "\n"
         sys.stderr.write(err)
         return False
+    except TypeError as err:
+        err = "Exception: " + str(err) + "\n"
+        sys.stderr.write(err)
+        return False
 
 
 if __name__ == '__main__':
