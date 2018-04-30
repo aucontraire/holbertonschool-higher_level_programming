@@ -9,6 +9,7 @@ def safe_print_integer_err(value):
     except ValueError as err:
         err = "Exception: " + str(err) + "\n"
         sys.stderr.write(err)
+        return False
 
 
 if __name__ == '__main__':
