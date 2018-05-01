@@ -5,25 +5,12 @@ class Square:
     """Square class."""
 
     def __init__(self, size=0):
-        """__init__ method for Square.
-
-        Args:
-            size (int): size of Square.
-
-        """
-        self.set_size(size)
-
-    def set_size(self, size):
-        """set_size sets the size of the square.
-
+        """__init__ method that sets the size of square.
         Args:
             size (int): size of Square
-
         Raises:
             TypeError: If `size` is not an integer.
             ValueError: If `size` is less than 0.
-
-
         """
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
