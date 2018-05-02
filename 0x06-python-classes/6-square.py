@@ -25,6 +25,7 @@ class Square:
 
     @property
     def size(self):
+        """gets size of square."""
         return self.__size
 
     @size.setter
@@ -45,6 +46,7 @@ class Square:
 
     @property
     def position(self):
+        """gets position of square."""
         return self.__position
 
     @position.setter
@@ -78,3 +80,19 @@ class Square:
                     else:
                         print('#', end='')
                 print()
+
+if __name__ == '__main__':
+    my_square_1 = Square(3)
+    my_square_1.my_print()
+
+    print("--")
+
+    my_square_2 = Square(3, (1, 1))
+    my_square_2.my_print()
+
+    print("--")
+
+    my_square_3 = Square(3, (3, 0))
+    my_square_3.my_print()
+
+    print("--")
