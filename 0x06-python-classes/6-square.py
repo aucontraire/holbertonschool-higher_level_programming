@@ -75,13 +75,25 @@ class Square:
         if self.__size == 0:
             print()
         else:
-            width = self.__size + self.__position[0]
-            height = self.__size + self.__position[1]
-            for h in range(height):
-                for w in range(width):
-                    if h < self.__position[1] or w < self.__position[0]:
-                        print(' ', end='')
-                    else:
-                        print('#', end='')
+            for i in range(self.__position[1]):
                 print()
+            for j in range(self.__size):
+                print(' ' * self.__position[0], end='')
+                print('#' * self.__size)
 
+
+if __name__ == '__main__':
+    my_square_1 = Square(3)
+    my_square_1.my_print()
+
+    print("--")
+
+    my_square_2 = Square(3, (1, 1))
+    my_square_2.my_print()
+
+    print("--")
+
+    my_square_3 = Square(3, (3, 0))
+    my_square_3.my_print()
+
+    print("--")
