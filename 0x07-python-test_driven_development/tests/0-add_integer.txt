@@ -53,3 +53,21 @@ TypeError: b must be an integer
 Traceback (most recent call last):
 ...
 TypeError: a must be an integer
+
+# a = str
+>>> add_integer('puppy')
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+# a = int, b = str
+>>> add_integer(5, 'doggo')
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+
+# a = str, b = str
+>>> add_integer('brekkie', 'dindin')
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
