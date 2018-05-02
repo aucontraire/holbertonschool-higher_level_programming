@@ -1,15 +1,15 @@
 #!/usr/bin/python3
 
-""" stuff and stuff
+""" add_integer
 
-
-
+Adds two integers (a, b) and returns integer sum
+Floats get converted to integers, all others raise TypeError
 """
 
 
 def add_integer(a, b=98):
-    """ add_integer - adds two integers
-    expects integers
+    """ add_integer - adds two integers (a, b)
+    Returns: integer sum
     """
     if isinstance(a, float):
         a = int(a)
