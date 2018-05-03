@@ -3,15 +3,12 @@
 
 def safe_division(a, b):
     quotient = 0
-
     try:
         quotient = a / b
     except ZeroDivisionError:
         print("division by 0")
-        quotient = 0
     except TypeError:
         print("wrong type")
-        quotient = 0
     finally:
         return quotient
 
