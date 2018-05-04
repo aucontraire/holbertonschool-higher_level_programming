@@ -31,3 +31,9 @@ TypeError: first_name must be a string
 Traceback (most recent call last):
 ...
 TypeError: first_name must be a string
+
+# first_name = str, last_name = None
+>>> say_my_name("Camaron", None)
+Traceback (most recent call last):
+...
+TypeError: last_name must be a string
