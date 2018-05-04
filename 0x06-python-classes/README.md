@@ -8,3 +8,4 @@
 * 6-square.py: private instance attribute: position
 * 100-singly_linked_list.py: class Node that defines a node of a singly linked list
 * 101-square.py: class Square that defines a square
+* 102-square.py: compare two squares (==, !=, >, >=, < and <=)
