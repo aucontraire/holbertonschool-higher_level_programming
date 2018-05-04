@@ -1,0 +1,21 @@
+The ``3-say_my_name`` module
+======================
+
+Using ``say_my_name``
+-------------------
+
+This is an example text file in reStructuredText format.  First import
+``say_my_name`` from the ``3-say_my_name`` module:
+
+-------------------
+
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+
+# first_name = str, last_name = str
+>>> say_my_name("Paco", "De Lucia")
+My name is Paco De Lucia
+
+# first_name = str, last_name = ""
+>>> say_my_name("Tomatito")
+My name is Tomatito 
