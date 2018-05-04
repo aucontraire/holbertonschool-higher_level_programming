@@ -7,3 +7,4 @@
 * 5-square.py: public instance method: def my_print(self): that prints in stdout the square with the character #
 * 6-square.py: private instance attribute: position
 * 100-singly_linked_list.py: class Node that defines a node of a singly linked list
+* 101-square.py: class Square that defines a square
