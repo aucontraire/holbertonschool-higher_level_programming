@@ -19,3 +19,15 @@ My name is Paco De Lucia
 # first_name = str, last_name = ""
 >>> say_my_name("Tomatito")
 My name is Tomatito 
+
+# first_name = None, last_name = ""
+>>> say_my_name(None)
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
+# first_name = None, last_name = None
+>>> say_my_name(None, None)
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
