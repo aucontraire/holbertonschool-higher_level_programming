@@ -1,0 +1,46 @@
+The ``5-text_indentation`` module
+======================
+
+Using ``text_indentation``
+-------------------
+
+This is an example text file in reStructuredText format.  First import
+``text_indentation`` from the ``5-text_indentation`` module:
+
+-------------------
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+
+# text = string with characters
+>>> text = "blue. green: yellow? red"
+>>> text_indentation(text)
+blue.
+<BLANKLINE>
+green:
+<BLANKLINE>
+yellow?
+<BLANKLINE>
+red
+
+# text = string with no characters
+>>> text_indentation("string with no characters")
+string with no characters
+
+# text = integer
+>>> text_indentation(5)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+
+# text = with no space
+>>> text_indentation("hello.there")
+hello.
+<BLANKLINE>
+there
+
+# text = one match
+>>> text_indentation("hello.")
+hello.
+<BLANKLINE>
