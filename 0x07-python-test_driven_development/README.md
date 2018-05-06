@@ -5,3 +5,4 @@
 * 4-print_square.py, tests/4-print_square.txt: function that prints a square with the character #
 * 5-text_indentation.py, tests/5-text_indentation.txt: function that prints a text with 2 new lines after each of these characters
 * 6-max_integer_test.py: unittests for the function def max_integer(list=[])
+* 100-matrix_mul.py, tests/100-matrix_mul.txt: function that multiplies 2 matrices
