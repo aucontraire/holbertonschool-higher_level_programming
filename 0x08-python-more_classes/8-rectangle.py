@@ -103,7 +103,7 @@ class Rectangle:
             rect_1 (Rectangle): rectangle 1
             rect_2 (Rectangle): rectangle 2
         Returns:
-            Returns bigger triangle, returns `rect_1` if both are equal
+            Returns bigger rectangle, returns `rect_1` if both are equal
         """
         if not isinstance(rect_1, Rectangle):
             raise TypeError("rect_1 must be an instance of Rectangle")
