@@ -2,19 +2,50 @@
 
 
 class Matrix:
-    """ Matrix."""
+    """Matrix.
+
+    Attributes:
+        name (str): name of matrix to use for error handling
+    """
     name = None
 
     @classmethod
     def set_name(cls, name, matrix):
+        """set_name class method, alternative constructor
+
+        Alternative constructor that provides a way to customize error handling
+        messages to include name of matrix
+
+        Args:
+            name (str): name of matrix.
+            matrix (list): list of lists
+        """
         cls.name = name
         return cls(matrix)
 
     def __init__(self, matrix):
+        """__init__ method.
+
+        Args:
+            matrix (list): list of lists
+        """
         self.matrix = matrix
 
     @property
     def matrix(self):
+        """matrix: returns matrix object
+
+        Args:
+            matrix (list): list of lists
+
+        Returns:
+            matrix object
+
+        Raises:
+            TypeError: if not a list or list of lists, not ints and floats, not
+                uniform in row width
+            ValueError: if empty or cannot be multiplied
+        """
         return self.__matrix
 
     @matrix.setter
@@ -44,13 +75,30 @@ class Matrix:
         self.__matrix = matrix
 
     def __len__(self):
+        """Provides length functionality to matrix object."""
         return len(self.__matrix)
 
     def __getitem__(self, index):
+        """Provides indexing functionality to matrix object."""
         return self.__matrix[index]
 
 
 def matrix_mul(m_a, m_b):
+    """matrix_mul multiplies two matrix objects
+
+    Note:
+        Most of the error handling is done in the Matrix class
+
+    Args:
+    m_a (Matrix obj):
+    m_b (Matrix obj):
+
+    Returns:
+        matrix object that is the result of matrix multiplication
+
+    Raises:
+        ValueError: if matrices cannot be multiplied
+    """
     m_a = Matrix.set_name('m_a', m_a)
     m_b = Matrix.set_name('m_b', m_b)
 
