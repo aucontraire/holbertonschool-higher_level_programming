@@ -5,3 +5,4 @@
 * 3-rectangle.py: class Rectangle with print capability / string representation
 * 4-rectangle.py: class Rectangle with __repr__ method
 * 5-rectangle.py: class Rectangle with __del__ method
+* 6-rectangle.py: class Rectangle with class attribute number_of_instances
