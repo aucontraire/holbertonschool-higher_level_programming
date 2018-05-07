@@ -4,3 +4,4 @@
 * 2-rectangle.py: class Rectangle with area and perimeter methods
 * 3-rectangle.py: class Rectangle with print capability / string representation
 * 4-rectangle.py: class Rectangle with __repr__ method
+* 5-rectangle.py: class Rectangle with __del__ method
