@@ -7,3 +7,4 @@
 * 5-rectangle.py: class Rectangle with __del__ method
 * 6-rectangle.py: class Rectangle with class attribute number_of_instances
 * 7-rectangle.py: class Rectangle with class attribute print_symbol
+* 8-rectangle.py: class Rectangle with static method bigger_or_equal
