@@ -3,6 +3,12 @@
 
 class Matrix:
     """ Matrix."""
+    name = None
+
+    @classmethod
+    def set_name(cls, name, matrix):
+        cls.name = name
+        return cls(matrix)
 
     def __init__(self, matrix):
         self.matrix = matrix
@@ -14,22 +20,26 @@ class Matrix:
     @matrix.setter
     def matrix(self, matrix):
         if not isinstance(matrix, list):
-            raise TypeError("m_a must be a list")
+            raise TypeError("{:s} must be a list".format(Matrix.name))
         if len(matrix) == 0:
-            raise ValueError("m_a can't be empty")
+            raise ValueError("{:s} can't be empty".format(Matrix.name))
         rows = len(matrix)
         columns = len(matrix[0])
         if columns == 0:
-            raise ValueError("m_a can't be empty")
+            raise ValueError("{:s} can't be empty".format(Matrix.name))
         for r in range(rows):
             if len(matrix[r]) != columns:
-                raise TypeError("each row of m_a must should be of the same size")
+                raise TypeError(
+                    "each row of {:s} must should be of the same size".format(
+                        Matrix.name))
 
         for r in range(rows):
             for c in range(columns):
                 n = matrix[r][c]
                 if not isinstance(n, int) and not isinstance(n, float):
-                    raise TypeError("m_a should contain only integers or floats")
+                    raise TypeError(
+                        "{:s} should contain only integers or floats".format(
+                            Matrix.name))
 
         self.__matrix = matrix
 
@@ -41,8 +51,8 @@ class Matrix:
 
 
 def matrix_mul(m_a, m_b):
-    m_a = Matrix(m_a)
-    m_b = Matrix(m_b)
+    m_a = Matrix.set_name('m_a', m_a)
+    m_b = Matrix.set_name('m_b', m_b)
 
     rows_a = len(m_a)
     columns_a = len(m_a[0])
@@ -58,7 +68,7 @@ def matrix_mul(m_a, m_b):
         for j in range(columns_b):
             sums = 0
             for k in range(rows_b):
-                sums = sums + (m_a[i][k] * m_b[k][j])
+                sums += m_a[i][k] * m_b[k][j]
             row.append(sums)
         matrix.append(row)
         row = []
