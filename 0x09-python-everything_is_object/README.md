@@ -18,3 +18,4 @@
 * 16-answer.txt: Integer incrementation
 * 17-answer.txt: List incrementation
 * 18-answer.txt: List assignation
+* 19-copy_list.py: Copy a list object
