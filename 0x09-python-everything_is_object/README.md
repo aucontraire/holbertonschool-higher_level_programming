@@ -8,3 +8,4 @@
 * 6-answer.txt: What should those 3 lines print?
 * 7-answer.txt: What should those 3 lines print?
 * 8-answer.txt: is really equal?
+* 9-answer.txt: is really the same?
