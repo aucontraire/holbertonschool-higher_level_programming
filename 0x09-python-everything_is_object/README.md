@@ -25,3 +25,4 @@
 * 23-answer.txt: tuple or not?
 * 24-answer.txt: Richard Sim's special #0
 * 25-answer.txt: Richard Sim's special #1
+* 26-answer.txt: Richard Sim's special #2
