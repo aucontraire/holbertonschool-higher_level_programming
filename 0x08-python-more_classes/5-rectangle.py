@@ -76,7 +76,7 @@ class Rectangle:
 
     def __del__(self):
         """Delete method"""
-        print("Bye rectangle…")
+        print("Bye rectangle...")
 
     def area(self):
         """Returns the area of the rectangle."""
