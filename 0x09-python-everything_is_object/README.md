@@ -6,3 +6,4 @@
 * 4-answer.txt: do a and b point to the same object?
 * 5-answer.txt: do a and b point to the same object?
 * 6-answer.txt: What should those 3 lines print?
+* 7-answer.txt: What should those 3 lines print?
