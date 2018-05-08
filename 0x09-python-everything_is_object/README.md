@@ -11,3 +11,4 @@
 * 9-answer.txt: is really the same?
 * 10-answer.txt: and with a list, is it equal?
 * 11-answer.txt:and with a list, is it the same?
+* 12-answer.txt: and with a list, is it really equal?
