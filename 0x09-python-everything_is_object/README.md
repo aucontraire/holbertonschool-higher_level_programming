@@ -17,3 +17,4 @@
 * 15-answer.txt: List add
 * 16-answer.txt: Integer incrementation
 * 17-answer.txt: List incrementation
+* 18-answer.txt: List assignation
