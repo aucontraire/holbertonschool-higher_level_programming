@@ -9,3 +9,5 @@
 * 7-answer.txt: What should those 3 lines print?
 * 8-answer.txt: is really equal?
 * 9-answer.txt: is really the same?
+* 10-answer.txt: and with a list, is it equal?
+* 11-answer.txt:and with a list, is it the same?
