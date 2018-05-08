@@ -15,3 +15,4 @@
 * 13-answer.txt: And with a list, is it really the same?
 * 14-answer.txt: List append
 * 15-answer.txt: List add
+* 16-answer.txt: Integer incrementation
