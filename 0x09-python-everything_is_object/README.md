@@ -29,3 +29,4 @@
 * 27-answer.txt: Richard Sim's special #3
 * 28-answer.txt: Richard Sim's special #4
 * 100-magic_string.py: function magic_string() that returns a string “Holberton” n times the number of the iteration
+* 101-locked_class.py: class LockedClass with no class or object attribute, that prevents the user to dynamically create new instance attributes, except if the new instance attribute is called first_name
