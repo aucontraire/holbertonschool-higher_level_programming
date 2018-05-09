@@ -32,3 +32,4 @@
 * 101-locked_class.py: class LockedClass with no class or object attribute, that prevents the user to dynamically create new instance attributes, except if the new instance attribute is called first_name
 * 103-line1.txt, 103-line2.txt: How many int objects are created?
 * 104-line1.txt, 104-line2.txt, 104-line3.txt, 104-line4.txt, 104-line5.txt: creating and deleting objects
+* 105-line1.txt: int objects in memory
