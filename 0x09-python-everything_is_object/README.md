@@ -28,3 +28,4 @@
 * 26-answer.txt: Richard Sim's special #2
 * 27-answer.txt: Richard Sim's special #3
 * 28-answer.txt: Richard Sim's special #4
+* 100-magic_string.py: function magic_string() that returns a string “Holberton” n times the number of the iteration
