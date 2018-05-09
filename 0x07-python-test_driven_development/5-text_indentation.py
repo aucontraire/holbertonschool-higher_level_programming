@@ -16,6 +16,7 @@ def text_indentation(text):
     while i < len(text):
         string += text[i]
         if text[i] in ['.', '?', ':']:
+            string = string.strip()
             print(string + '\n')
             try:
                 if text[i + 1] == ' ':
@@ -39,3 +40,6 @@ if __name__ == '__main__':
     text_indentation("hello.there")
     print()
     text_indentation("hello.")
+    print()
+    text_indentation("Holberton. School? How are you: John")
+    print()
