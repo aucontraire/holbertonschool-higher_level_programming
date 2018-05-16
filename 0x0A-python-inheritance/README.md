@@ -3,3 +3,4 @@
 * 1-my_list.py, tests/1-my_list.txt: class MyList that inherits from list
 * 2-is_same_class.py: function that returns True if the object is exactly an instance of the specified class
 * 3-is_kind_of_class.py: function that returns True if the object is an instance of, or if the object is an instance of a class that inherited from
+* 4-inherits_from.py: function that returns True if the object is an instance of a class that inherited (directly or indirectly) from the specified class
