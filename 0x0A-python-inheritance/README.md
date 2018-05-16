@@ -8,3 +8,4 @@
 * 6-base_geometry.py: a class BaseGeometry with area method
 * 7-base_geometry.py: tests/7-base_geometry.txt: a class BaseGeometry with integer validator method
 * 8-rectangle.py: class Rectangle that inherits from BaseGeometry with __init__ method
+* 9-rectangle.py: class Rectangle with area, __str__ methods
