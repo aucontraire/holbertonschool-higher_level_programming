@@ -2,11 +2,10 @@
 
 
 def read_lines(filename="", nb_lines=0):
-    """Count number of lines in file
+    """Print out number of lines requested
     Args:
         filename (str): string of path to file
-    Returns:
-        number of lines in file
+        nb_lines (int): number of lines
 
     """
     with open(filename, 'r', encoding='utf-8') as f:
