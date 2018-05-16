@@ -12,7 +12,7 @@ This is an example text file in reStructuredText format.  First import
 >>> MyList = __import__('1-my_list').MyList
 
 
-# my_list = easy sorted integers
+# my_list = easily sorted integers
 >>> my_list = MyList()
 >>> my_list.append(1)
 >>> my_list.append(4)
@@ -25,3 +25,39 @@ This is an example text file in reStructuredText format.  First import
 [1, 2, 3, 4, 5]
 >>> print(my_list)
 [1, 4, 2, 3, 5]
+
+
+# my_list = list with negative numbers
+>>> my_list = MyList()
+>>> my_list.append(5)
+>>> my_list.append(3)
+>>> my_list.append(-1)
+>>> my_list.append(-2)
+>>> my_list.append(4)
+>>> print(my_list)
+[5, 3, -1, -2, 4]
+>>> my_list.print_sorted()
+[-2, -1, 3, 4, 5]
+>>> print(my_list)
+[5, 3, -1, -2, 4]
+
+
+# my_list = all negative integers
+>>> my_list = MyList()
+>>> my_list.append(-3)
+>>> my_list.append(-1)
+>>> my_list.append(-5)
+>>> my_list.append(-2)
+>>> my_list.append(-4)
+>>> print(my_list)
+[-3, -1, -5, -2, -4]
+>>> my_list.print_sorted()
+[-5, -4, -3, -2, -1]
+>>> print(my_list)
+[-3, -1, -5, -2, -4]
+
+
+# my_list = empty list
+>>> my_list = MyList()
+>>> my_list.print_sorted()
+[]
