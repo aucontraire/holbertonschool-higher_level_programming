@@ -10,3 +10,4 @@
 * 8-rectangle.py: class Rectangle that inherits from BaseGeometry with __init__ method
 * 9-rectangle.py: class Rectangle with area, __str__ methods
 * 10-square.py: class Square that inherits from Rectangle
+* 11-square.py: class Square with __str__ method
