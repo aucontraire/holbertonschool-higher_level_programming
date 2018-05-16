@@ -11,3 +11,4 @@
 * 9-rectangle.py: class Rectangle with area, __str__ methods
 * 10-square.py: class Square that inherits from Rectangle
 * 11-square.py: class Square with __str__ method
+* 100-my_int.py: class MyInt that inherits from int
