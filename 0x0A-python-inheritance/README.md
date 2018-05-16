@@ -12,3 +12,4 @@
 * 10-square.py: class Square that inherits from Rectangle
 * 11-square.py: class Square with __str__ method
 * 100-my_int.py: class MyInt that inherits from int
+* 101-add_attribute.py: function that adds a new attribute to an object if it’s possible
