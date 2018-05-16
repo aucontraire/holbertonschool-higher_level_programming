@@ -10,9 +10,9 @@ def add_attribute(obj, attr, value):
     Raises:
         TypeError: if the attribute can't be set
     """
-    try:
+    if hasattr(obj, attr):
         setattr(obj, attr, value)
-    except Exception:
+    else:
         raise TypeError("can't add new attribute")
 
 
