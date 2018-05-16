@@ -5,3 +5,4 @@
 * 3-write_file.py: function that writes a string to a text file and returns the number of characters written
 * 4-append_write.py: function that appends a string at the end of a text file
 * 5-to_json_string.py: function that returns the JSON representation of an object (string)
+* 6-from_json_string.py: function that returns an object (Python data structure) represented by a JSON string
