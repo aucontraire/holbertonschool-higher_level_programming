@@ -9,3 +9,4 @@
 * 7-base_geometry.py: tests/7-base_geometry.txt: a class BaseGeometry with integer validator method
 * 8-rectangle.py: class Rectangle that inherits from BaseGeometry with __init__ method
 * 9-rectangle.py: class Rectangle with area, __str__ methods
+* 10-square.py: class Square that inherits from Rectangle
