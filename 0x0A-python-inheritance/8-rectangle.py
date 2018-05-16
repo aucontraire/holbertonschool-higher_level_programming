@@ -5,7 +5,7 @@ class BaseGeometry:
     """BaseGeometry class with area method"""
     def area(self):
         """Area method not implemented"""
-        raise Exception("area is not implemented")
+        raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
         """integer validator
@@ -31,10 +31,10 @@ class Rectangle(BaseGeometry):
             width (int): width integer must be greater than 0
             height (int): height integer must be greater than 0
         """
-        super().integer_validator(self, width)
-        super().integer_validator(self, height)
+        super().integer_validator("width", width)
+        super().integer_validator("height", height)
         self.__width = width
-        self.__heigh = height
+        self.__height = height
 
 
 if __name__ == '__main__':
