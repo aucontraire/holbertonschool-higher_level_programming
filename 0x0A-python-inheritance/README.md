@@ -6,3 +6,4 @@
 * 4-inherits_from.py: function that returns True if the object is an instance of a class that inherited (directly or indirectly) from the specified class
 * 5-base_geometry.py: empty class BaseGeometry
 * 6-base_geometry.py: a class BaseGeometry with area method
+* 7-base_geometry.py, tests/7-base_geometry.txt: a class BaseGeometry with integer validator method
