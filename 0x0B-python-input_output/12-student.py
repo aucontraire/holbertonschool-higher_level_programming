@@ -31,7 +31,7 @@ class Student:
             object dictionary
         """
         obj_dict = class_to_json(self)
-        if not attrs:
+        if not attrs or len(attrs) == 0:
             return obj_dict
         else:
             filter_dict = {}
