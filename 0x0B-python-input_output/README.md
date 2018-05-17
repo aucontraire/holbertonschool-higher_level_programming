@@ -11,3 +11,4 @@
 * 9-add_item.py: script that adds all arguments to a Python list, and then save them to a file
 * 10-class_to_json.py: function that returns the dictionary description with simple data structure
 * 11-student.py: class Student with __init__, to_json methods
+* 12-student.py: class Student with to_json method modified to filter
