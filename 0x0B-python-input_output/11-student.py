@@ -1,7 +1,12 @@
 #!/usr/bin/python3
 
 
-class_to_json = __import__('10-class_to_json').class_to_json
+def class_to_json(obj):
+    """Serialize class attributes to dictionary
+    Args:
+        obj (object): object to be serialized
+    """
+    return (obj.__dict__)
 
 
 class Student:
