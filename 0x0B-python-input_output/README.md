@@ -10,3 +10,4 @@
 * 8-load_from_json_file.py: function that creates an Object from a “JSON file”
 * 9-add_item.py: script that adds all arguments to a Python list, and then save them to a file
 * 10-class_to_json.py: function that returns the dictionary description with simple data structure
+* 11-student.py: class Student with __init__, to_json methods
