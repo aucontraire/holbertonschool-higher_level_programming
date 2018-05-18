@@ -12,3 +12,4 @@
 * 10-class_to_json.py: function that returns the dictionary description with simple data structure
 * 11-student.py: class Student with __init__, to_json methods
 * 12-student.py: class Student with to_json method modified to filter
+* 13-student.py: class Student with reload_from_json method
