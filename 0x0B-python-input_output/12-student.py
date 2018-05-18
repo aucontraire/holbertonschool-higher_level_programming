@@ -33,8 +33,6 @@ class Student:
         obj_dict = class_to_json(self)
         if not attrs:
             return obj_dict
-        elif len(attrs) == 0:
-            return {}
         else:
             filter_dict = {}
             for att in attrs:
