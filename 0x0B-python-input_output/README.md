@@ -13,3 +13,4 @@
 * 11-student.py: class Student with __init__, to_json methods
 * 12-student.py: class Student with to_json method modified to filter
 * 13-student.py: class Student with reload_from_json method
+* 14-pascal_triangle.py: function that returns a list of lists of integers representing the Pascal’s triangle of n
