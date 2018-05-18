@@ -14,3 +14,4 @@
 * 12-student.py: class Student with to_json method modified to filter
 * 13-student.py: class Student with reload_from_json method
 * 14-pascal_triangle.py: function that returns a list of lists of integers representing the Pascal’s triangle of n
+* 100-append_after.py:  function that inserts a line of text to a file, after each line containing a specific string
