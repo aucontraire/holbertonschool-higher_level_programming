@@ -1,14 +1,6 @@
 #!/usr/bin/python3
 
 
-def class_to_json(obj):
-    """Serialize class attributes to dictionary
-    Args:
-        obj (object): object to be serialized
-    """
-    return (obj.__dict__)
-
-
 class Student:
     """Student class"""
 
@@ -30,7 +22,7 @@ class Student:
         Returns:
             object dictionary
         """
-        obj_dict = class_to_json(self)
+        obj_dict = self.__dict__
         if not attrs:
             return obj_dict
         else:
