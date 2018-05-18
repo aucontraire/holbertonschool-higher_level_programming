@@ -46,4 +46,6 @@ class Student:
         Args:
             json (dict): dictionary of JSON file
         """
-        self.__init__(json['first_name'], json['last_name'], json['age'])
+        for k, v in json.items():
+            if hasattr(self, k):
+                setattr(self, k, v)
