@@ -37,9 +37,9 @@ class Student:
             return {}
         else:
             filter_dict = {}
-            for k, v in obj_dict.items():
-                if k in attrs:
-                    filter_dict[k] = v
+            for att in attrs:
+                if hasattr(self, att):
+                    filter_dict[att] = obj_dict[att]
             return filter_dict
 
 
