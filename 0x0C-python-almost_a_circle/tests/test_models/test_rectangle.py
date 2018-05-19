@@ -80,6 +80,20 @@ class TestRectangleClass(unittest.TestCase):
         sys.stdout = sys.__stdout__
         self.assertEqual(output.getvalue(), "\n  ##\n  ##\n")
 
+    def test_update_method(self):
+        r16 = Rectangle(2, 2)
+        r16.update(3)
+        self.assertEqual(r16.id, 3)
+        r16.update(3, 5)
+        self.assertEqual(r16.width, 5)
+        r16.update(3, 5, 7)
+        self.assertEqual(r16.height, 7)
+        r16.update(3, 5, 7, 1)
+        self.assertEqual(r16.x, 1)
+        r16.update(3, 5, 7, 1, 2)
+        self.assertEqual(r16.y, 2)
+        str_r = r16.__str__()
+        self.assertEqual(str_r, '[Rectangle] (3) 1/2 - 5/7')
 
 if __name__ == '__main__':
     unittest.main()
