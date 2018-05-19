@@ -68,6 +68,9 @@ class TestRectangleClass(unittest.TestCase):
         r13 = Rectangle(2, 2)
         str_r = r13.__str__()
         self.assertEqual(str_r, '[Rectangle] (19) 0/0 - 2/2')
+        r14 = Rectangle(4, 6, 2, 1, 12)
+        str_r1 = r14.__str__()
+        self.assertEqual(str_r1, '[Rectangle] (12) 2/1 - 4/6')
 
 
 if __name__ == '__main__':
