@@ -13,7 +13,7 @@ class TestRectangleClass(unittest.TestCase):
 
     def test_attributes_with_correct_initialization(self):
         r1 = Rectangle(5, 6)
-        self.assertEqual(r1.id, 6)
+        self.assertEqual(r1.id, 7)
         self.assertEqual(r1.width, 5)
         self.assertEqual(r1.height, 6)
         self.assertEqual(r1.x, 0)
@@ -49,6 +49,10 @@ class TestRectangleClass(unittest.TestCase):
             r9 = Rectangle(1, 1, -2)
         with self.assertRaises(ValueError):
             r10 = Rectangle(1, 1, 1, -2)
+
+    def test_area_method(self):
+        r11 = Rectangle(10, 10)
+        self.assertEqual(r11.area(), 100)
 
 
 if __name__ == '__main__':
