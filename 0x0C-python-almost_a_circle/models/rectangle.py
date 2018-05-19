@@ -106,3 +106,12 @@ class Rectangle(Base):
             area of rectangle
         """
         return self.width * self.height
+
+    def display(self):
+        """Prints # representation of rectangle"""
+        rows = self.height
+        columns = self.width
+        for r in range(rows):
+            for c in range(columns):
+                print('#', end='')
+            print()

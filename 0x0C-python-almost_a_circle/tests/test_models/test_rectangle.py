@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+import io
+import sys
 import unittest
 from models.base import Base
 from models.rectangle import Rectangle
@@ -53,6 +55,14 @@ class TestRectangleClass(unittest.TestCase):
     def test_area_method(self):
         r11 = Rectangle(10, 10)
         self.assertEqual(r11.area(), 100)
+
+    def test_display_method(self):
+        output = io.StringIO()
+        sys.stdout = output
+        r12 = Rectangle(2, 2)
+        r12.display()
+        sys.stdout = sys.__stdout__
+        self.assertEqual(output.getvalue(), "##\n##\n")
 
 
 if __name__ == '__main__':
