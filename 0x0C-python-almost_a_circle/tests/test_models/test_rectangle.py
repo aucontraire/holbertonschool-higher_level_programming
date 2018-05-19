@@ -95,5 +95,19 @@ class TestRectangleClass(unittest.TestCase):
         str_r = r16.__str__()
         self.assertEqual(str_r, '[Rectangle] (3) 1/2 - 5/7')
 
+    def test_update_method_args_kwargs(self):
+        r17 = Rectangle(1, 1)
+        r17.update(width=1, x=2)
+        str_r = r17.__str__()
+        self.assertEqual(str_r, '[Rectangle] (22) 2/0 - 1/1')
+        r18 = Rectangle(2, 2)
+        r18.update(x=1, height=2, y=3, width=4, id=99)
+        str_r1 = r18.__str__()
+        self.assertEqual(str_r1, '[Rectangle] (99) 1/3 - 4/2')
+        r19 = Rectangle(10, 10, 10, 10, 10)
+        str_r2 = r19.__str__()
+        self.assertEqual(str_r2, '[Rectangle] (10) 10/10 - 10/10')
+
+
 if __name__ == '__main__':
     unittest.main()
