@@ -67,10 +67,18 @@ class TestRectangleClass(unittest.TestCase):
     def test_str_method(self):
         r13 = Rectangle(2, 2)
         str_r = r13.__str__()
-        self.assertEqual(str_r, '[Rectangle] (19) 0/0 - 2/2')
+        self.assertEqual(str_r, '[Rectangle] (20) 0/0 - 2/2')
         r14 = Rectangle(4, 6, 2, 1, 12)
         str_r1 = r14.__str__()
         self.assertEqual(str_r1, '[Rectangle] (12) 2/1 - 4/6')
+
+    def test_display_method_w_coordinates(self):
+        output = io.StringIO()
+        sys.stdout = output
+        r15 = Rectangle(2, 2, 2, 1)
+        r15.display()
+        sys.stdout = sys.__stdout__
+        self.assertEqual(output.getvalue(), "\n  ##\n  ##\n")
 
 
 if __name__ == '__main__':

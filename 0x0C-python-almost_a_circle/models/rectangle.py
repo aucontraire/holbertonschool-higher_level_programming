@@ -111,7 +111,10 @@ class Rectangle(Base):
         """Prints # representation of rectangle"""
         rows = self.height
         columns = self.width
+        for _ in range(self.y):
+            print()
         for r in range(rows):
+            print(' ' * self.x, end='')
             for c in range(columns):
                 print('#', end='')
             print()
