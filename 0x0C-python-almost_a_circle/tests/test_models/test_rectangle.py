@@ -30,5 +30,26 @@ class TestRectangleClass(unittest.TestCase):
         with self.assertRaises(AttributeError):
             r2.__y
 
+    def test_attributes_wrong_data_types(self):
+        with self.assertRaises(TypeError):
+            r3 = Rectangle('a', 9)
+        with self.assertRaises(TypeError):
+            r4 = Rectangle(9, 'a')
+        with self.assertRaises(TypeError):
+            r5 = Rectangle(9, 9, 'a')
+        with self.assertRaises(TypeError):
+            r6 = Rectangle(9, 9, 3, 'a')
+
+    def test_attributes_with_wrong_int_range(self):
+        with self.assertRaises(ValueError):
+            r7 = Rectangle(0, 1)
+        with self.assertRaises(ValueError):
+            r8 = Rectangle(1, 0)
+        with self.assertRaises(ValueError):
+            r9 = Rectangle(1, 1, -2)
+        with self.assertRaises(ValueError):
+            r10 = Rectangle(1, 1, 1, -2)
+
+
 if __name__ == '__main__':
     unittest.main()
