@@ -115,3 +115,9 @@ class Rectangle(Base):
             for c in range(columns):
                 print('#', end='')
             print()
+
+    def __str__(self):
+        """Returns string representation of rectangle object"""
+        return "[{}] ({:d}) {:d}/{:d} - {:d}/{:d}".format(
+            type(self).__name__,
+            self.id, self.x, self.y, self.width, self.height)
