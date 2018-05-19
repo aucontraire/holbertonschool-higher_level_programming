@@ -126,7 +126,11 @@ class Rectangle(Base):
             self.id, self.x, self.y, self.width, self.height)
 
     def update(self, *args, **kwargs):
-        """Update attributes"""
+        """Update attributes
+        Args:
+            args: arguments
+            kwargs: key-word arguments
+        """
         if len(args) > 0:
             for i, arg in enumerate(args):
                 if i == 0:
