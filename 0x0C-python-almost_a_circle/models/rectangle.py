@@ -155,3 +155,22 @@ class Rectangle(Base):
                     self.x = v
                 if k == 'y':
                     self.y = v
+
+    def to_dictionary(self):
+        """Dictionary representation of a rectangle
+        Returns:
+            dictionary of attributes
+        """
+        obj_dict = {}
+        for k, v in self.__dict__.items():
+            if k == '_Rectangle__width':
+                obj_dict['width'] = v
+            if k == 'id':
+                obj_dict['id'] = v
+            if k == '_Rectangle__y':
+                obj_dict['y'] = v
+            if k == '_Rectangle__height':
+                obj_dict['height'] = v
+            if k == '_Rectangle__x':
+                obj_dict['x'] = v
+        return obj_dict

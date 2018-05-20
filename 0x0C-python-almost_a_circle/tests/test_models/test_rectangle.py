@@ -99,7 +99,7 @@ class TestRectangleClass(unittest.TestCase):
         r17 = Rectangle(1, 1)
         r17.update(width=1, x=2)
         str_r = r17.__str__()
-        self.assertEqual(str_r, '[Rectangle] (22) 2/0 - 1/1')
+        self.assertEqual(str_r, '[Rectangle] (23) 2/0 - 1/1')
         r18 = Rectangle(2, 2)
         r18.update(x=1, height=2, y=3, width=4, id=99)
         str_r1 = r18.__str__()
@@ -107,6 +107,14 @@ class TestRectangleClass(unittest.TestCase):
         r19 = Rectangle(10, 10, 10, 10, 10)
         str_r2 = r19.__str__()
         self.assertEqual(str_r2, '[Rectangle] (10) 10/10 - 10/10')
+
+    def test_to_dictionary_method(self):
+        r20 = Rectangle(3, 3)
+        d = r20.to_dictionary()
+        self.assertEqual(d['width'], 3)
+        self.assertEqual(d['height'], 3)
+        self.assertEqual(d['x'], 0)
+        self.assertEqual(d['y'], 0)
 
 
 if __name__ == '__main__':
