@@ -58,6 +58,16 @@ class TestSquareClass(unittest.TestCase):
         sys.stdout = sys.__stdout__
         self.assertEqual(output.getvalue(), "\n ##\n ##\n")
 
+    def test_size_attribute(self):
+        sq10 = Square(5)
+        self.assertEqual(sq10.size, 5)
+        sq10.size = 9
+        self.assertEqual(sq10.size, 9)
+        with self.assertRaises(TypeError):
+            sq10.size = 'a'
+        with self.assertRaises(ValueError):
+            sq10.size = -10
+
 
 if __name__ == '__main__':
     unittest.main()

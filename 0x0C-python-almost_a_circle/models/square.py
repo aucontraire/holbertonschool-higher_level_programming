@@ -19,3 +19,19 @@ class Square(Rectangle):
         """String representation of square object"""
         return "[{}] ({:d}) {:d}/{:d} - {:d}".format(
             type(self).__name__, self.id, self.x, self.y, self.width)
+
+    @property
+    def size(self):
+        return self.width
+
+    @size.setter
+    def size(self, size):
+        """Size setter
+        Args:
+            size (int): size of square
+        Raises:
+            TypeError: if not an integer
+            ValueError: if not greater than zero
+        """
+        self.width = size
+        self.height = size
