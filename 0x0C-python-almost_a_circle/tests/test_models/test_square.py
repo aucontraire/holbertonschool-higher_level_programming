@@ -68,6 +68,17 @@ class TestSquareClass(unittest.TestCase):
         with self.assertRaises(ValueError):
             sq10.size = -10
 
+    def test_update_method_args_kwargs(self):
+        sq11 = Square(1)
+        sq11.update(1)
+        self.assertEqual(sq11.__str__(), '[Square] (1) 0/0 - 1')
+        sq11.update(1, 5)
+        self.assertEqual(sq11.__str__(), '[Square] (1) 0/0 - 5')
+        sq11.update(1, 5, 2, 3)
+        self.assertEqual(sq11.__str__(), '[Square] (1) 2/3 - 5')
+        sq11.update(id=99, x=4, y=7, size=8)
+        self.assertEqual(sq11.__str__(), '[Square] (99) 4/7 - 8')
+
 
 if __name__ == '__main__':
     unittest.main()
