@@ -43,12 +43,10 @@ class TestSquareClass(unittest.TestCase):
         sys.stdout = sys.__stdout__
         self.assertEqual(output.getvalue(), "##\n##\n")
 
-
     def test_str_method(self):
         sq8 = Square(2, id=99)
         str_s = sq8.__str__()
         self.assertEqual(str_s, '[Square] (99) 0/0 - 2')
-
 
     def test_display_method_w_coordinates(self):
         output = io.StringIO()
@@ -79,6 +77,14 @@ class TestSquareClass(unittest.TestCase):
         sq11.update(id=99, x=4, y=7, size=8)
         self.assertEqual(sq11.__str__(), '[Square] (99) 4/7 - 8')
 
+    def test_to_dictionary_method(self):
+        sq12 = Square(3)
+        d = sq12.to_dictionary()
+        self.assertIsInstance(d, dict)
+        self.assertEqual(d['id'], 33)
+        self.assertEqual(d['size'], 3)
+        self.assertEqual(d['x'], 0)
+        self.assertEqual(d['y'], 0)
 
 if __name__ == '__main__':
     unittest.main()
