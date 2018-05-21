@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 import unittest
 from models.base import Base
+from models.rectangle import Rectangle
+from models.square import Square
 
 
 class TestBaseClass(unittest.TestCase):
@@ -22,6 +24,20 @@ class TestBaseClass(unittest.TestCase):
         b5 = Base()
         self.assertEqual(b4.id, 5)
         self.assertEqual(b5.id, 5)
+
+    def test_to_json_string(self):
+        r = Rectangle(10, 7, 2, 8)
+        rd = r.to_dictionary()
+        self.assertIsInstance(rd, dict)
+        json_rd = Base.to_json_string([rd])
+        self.assertIsInstance(json_rd, str)
+
+        s = Square(10)
+        sd = s.to_dictionary()
+        self.assertIsInstance(sd, dict)
+        json_sd = Base.to_json_string([sd])
+        self.assertIsInstance(json_sd, str)
+
 
 if __name__ == '__main__':
     unittest.main()
