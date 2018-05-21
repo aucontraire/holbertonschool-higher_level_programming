@@ -15,7 +15,7 @@ class TestRectangleClass(unittest.TestCase):
 
     def test_attributes_with_correct_initialization(self):
         r1 = Rectangle(5, 6)
-        self.assertEqual(r1.id, 7)
+        self.assertEqual(r1.id, 9)
         self.assertEqual(r1.width, 5)
         self.assertEqual(r1.height, 6)
         self.assertEqual(r1.x, 0)
@@ -67,7 +67,7 @@ class TestRectangleClass(unittest.TestCase):
     def test_str_method(self):
         r13 = Rectangle(2, 2)
         str_r = r13.__str__()
-        self.assertEqual(str_r, '[Rectangle] (20) 0/0 - 2/2')
+        self.assertEqual(str_r, '[Rectangle] (22) 0/0 - 2/2')
         r14 = Rectangle(4, 6, 2, 1, 12)
         str_r1 = r14.__str__()
         self.assertEqual(str_r1, '[Rectangle] (12) 2/1 - 4/6')
@@ -99,7 +99,7 @@ class TestRectangleClass(unittest.TestCase):
         r17 = Rectangle(1, 1)
         r17.update(width=1, x=2)
         str_r = r17.__str__()
-        self.assertEqual(str_r, '[Rectangle] (23) 2/0 - 1/1')
+        self.assertEqual(str_r, '[Rectangle] (25) 2/0 - 1/1')
         r18 = Rectangle(2, 2)
         r18.update(x=1, height=2, y=3, width=4, id=99)
         str_r1 = r18.__str__()
