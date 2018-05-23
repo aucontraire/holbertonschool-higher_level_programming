@@ -70,3 +70,8 @@ class Base:
         obj = object.__new__(cls)
         obj.update(dictionary)
         return obj
+
+    @classmethod
+    def reset(cls):
+        """Reset __nb_objects back to zero"""
+        cls.__nb_objects = 0
