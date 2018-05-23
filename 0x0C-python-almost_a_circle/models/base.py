@@ -85,8 +85,11 @@ class Base:
             list of instances
         """
         obj_list = []
-        with open(cls.__name__ + '.json', 'r', encoding='utf-8') as f:
-            list_output = cls.from_json_string(f.read())
-            for obj in list_output:
-                obj_list.append(cls.create(**obj))
+        try:
+            with open(cls.__name__ + '.json', 'r', encoding='utf-8') as f:
+                list_output = cls.from_json_string(f.read())
+                for obj in list_output:
+                    obj_list.append(cls.create(**obj))
+        except Exception:
+            pass
         return obj_list
