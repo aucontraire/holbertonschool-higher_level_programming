@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Rectangle class unittests"""
 import io
 import sys
 import unittest

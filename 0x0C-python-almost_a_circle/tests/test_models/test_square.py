@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Square class unittests"""
 import io
 import sys
 import unittest

@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Base class unittests"""
 import json
 import unittest
 from models.base import Base
