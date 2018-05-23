@@ -74,7 +74,7 @@ class Base:
             obj = cls(1,1)
         elif cls.__name__ == 'Square':
             obj = cls(1)
-        return obj.update(**dictionary)
+        return cls.update(obj, **dictionary)
 
     @classmethod
     def reset(cls):
