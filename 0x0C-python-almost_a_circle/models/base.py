@@ -75,3 +75,16 @@ class Base:
     def reset(cls):
         """Reset __nb_objects back to zero"""
         cls.__nb_objects = 0
+
+    @classmethod
+    def load_from_file(cls):
+        """load_from_file - creates a list of instances from JSON file
+        Returns:
+            list of instances
+        """
+        obj_list = []
+        with open(cls.__name__ + '.json', 'r', encoding='utf-8') as f:
+            list_output = cls.from_json_string(f.read())
+            for obj in list_output:
+                obj_list.append(cls.create(**obj))
+        return obj_list

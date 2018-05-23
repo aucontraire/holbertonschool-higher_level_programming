@@ -110,5 +110,13 @@ class TestBaseClass(unittest.TestCase):
         self.assertFalse(s1 is s2)
         self.assertNotEqual(s2, s1)
 
+    def test_load_from_file_method(self):
+        """load_from_file method unittest"""
+        r1 = Rectangle(10, 7, 2, 8, id=10)
+        r2 = Rectangle(2, 4, id=11)
+        list_rectangles_input = [r1, r2]
+        Rectangle.save_to_file(list_rectangles_input)
+        list_rectangles_output = Rectangle.load_from_file()
+
 if __name__ == '__main__':
     unittest.main()
