@@ -16,15 +16,15 @@ class TestBaseClass(unittest.TestCase):
         b1 = Base()
         b2 = Base()
         b3 = Base()
-        self.assertEqual(b1.id, 2)
-        self.assertEqual(b2.id, 3)
-        self.assertEqual(b3.id, 4)
+        self.assertEqual(b1.id, 3)
+        self.assertEqual(b2.id, 4)
+        self.assertEqual(b3.id, 5)
 
     def test_no_id_plus_id_combo(self):
         b4 = Base(5)
         b5 = Base()
         self.assertEqual(b4.id, 5)
-        self.assertEqual(b5.id, 5)
+        self.assertEqual(b5.id, 6)
 
     def test_to_json_string(self):
         r = Rectangle(10, 7, 2, 8)
@@ -49,8 +49,8 @@ class TestBaseClass(unittest.TestCase):
         self.assertIsInstance(dict_list, list)
         self.assertEqual(len(dict_list), 2)
         list_ref = [
-            {'id': 6, 'height': 7, 'x': 2, 'width': 10, 'y': 8},
-            {'id': 7, 'height': 4, 'x': 0, 'width': 2, 'y': 0}
+            {'id': 7, 'height': 7, 'x': 2, 'width': 10, 'y': 8},
+            {'id': 8, 'height': 4, 'x': 0, 'width': 2, 'y': 0}
         ]
         self.assertListEqual(dict_list, list_ref)
 
@@ -88,6 +88,19 @@ class TestBaseClass(unittest.TestCase):
         json_list_input = Rectangle.to_json_string(list_input)
         list_output = Rectangle.from_json_string(json_list_input)
         self.assertListEqual(list_output, list_input)
+
+    def test_create_method(self):
+        r1 = Rectangle(3, 5, 1)
+        r1_dictionary = r1.to_dictionary()
+        r2 = Rectangle.create(**r1_dictionary)
+        self.assertFalse(r1 is r2)
+        self.assertNotEqual(r2, r1)
+
+        s1 = Square(5, id=6, x=1, y=2)
+        s1_dictionary = s1.to_dictionary()
+        s2 = Square.create(**s1_dictionary)
+        self.assertFalse(s1 is s2)
+        self.assertNotEqual(s2, s1)
 
 if __name__ == '__main__':
     unittest.main()
