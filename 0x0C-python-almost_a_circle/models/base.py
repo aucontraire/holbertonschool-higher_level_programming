@@ -68,7 +68,7 @@ class Base:
             instance of an object initialized
         """
         obj = object.__new__(cls)
-        obj.update(dictionary)
+        obj.update(**dictionary)
         return obj
 
     @classmethod
