@@ -9,10 +9,12 @@ from models.square import Square
 class TestBaseClass(unittest.TestCase):
 
     def test_class_membership(self):
+        """Base class unittest"""
         b0 = Base()
         self.assertIsInstance(b0, Base)
 
     def test_no_id_arg(self):
+        """Base class ids unittest"""
         b1 = Base()
         b2 = Base()
         b3 = Base()
@@ -21,12 +23,14 @@ class TestBaseClass(unittest.TestCase):
         self.assertEqual(b3.id, 5)
 
     def test_no_id_plus_id_combo(self):
+        """Base class ids unittest"""
         b4 = Base(5)
         b5 = Base()
         self.assertEqual(b4.id, 5)
         self.assertEqual(b5.id, 6)
 
     def test_to_json_string(self):
+        """to_json_string method unittest"""
         r = Rectangle(10, 7, 2, 8)
         rd = r.to_dictionary()
         self.assertIsInstance(rd, dict)
@@ -40,6 +44,7 @@ class TestBaseClass(unittest.TestCase):
         self.assertIsInstance(json_sd, str)
 
     def test_save_to_file(self):
+        """save_to_file method unittest"""
         r1 = Rectangle(10, 7, 2, 8)
         r2 = Rectangle(2, 4)
         Rectangle.save_to_file([r1, r2])
@@ -76,6 +81,7 @@ class TestBaseClass(unittest.TestCase):
         self.assertListEqual(dict_list, list_ref)
 
     def test_from_json_string(self):
+        """from_json_string method unittest"""
         list_input = [
             {'id': 89, 'width': 10, 'height': 4},
             {'id': 7, 'width': 1, 'height': 7}
@@ -90,6 +96,7 @@ class TestBaseClass(unittest.TestCase):
         self.assertListEqual(list_output, list_input)
 
     def test_create_method(self):
+        """create method unittest"""
         r1 = Rectangle(3, 5, 1)
         r1_dictionary = r1.to_dictionary()
         r2 = Rectangle.create(**r1_dictionary)
