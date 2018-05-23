@@ -75,6 +75,19 @@ class TestBaseClass(unittest.TestCase):
         ]
         self.assertListEqual(dict_list, list_ref)
 
+    def test_from_json_string(self):
+        list_input = [
+            {'id': 89, 'width': 10, 'height': 4},
+            {'id': 7, 'width': 1, 'height': 7}
+        ]
+        json_list_input = Rectangle.to_json_string(list_input)
+        list_output = Rectangle.from_json_string(json_list_input)
+        self.assertListEqual(list_output, list_input)
+
+        list_input = []
+        json_list_input = Rectangle.to_json_string(list_input)
+        list_output = Rectangle.from_json_string(json_list_input)
+        self.assertListEqual(list_output, list_input)
 
 if __name__ == '__main__':
     unittest.main()
