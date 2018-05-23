@@ -69,9 +69,12 @@ class Base:
         Returns:
             instance of an object initialized
         """
-        obj = object.__new__(cls)
-        obj.update(**dictionary)
-        return obj
+        obj = None
+        if cls.__name__ == 'Rectangle':
+            obj = cls(1,1)
+        elif cls.__name__ == 'Square':
+            obj = cls(1)
+        return obj.update(**dictionary)
 
     @classmethod
     def reset(cls):
