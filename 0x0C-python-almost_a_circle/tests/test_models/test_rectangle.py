@@ -106,6 +106,7 @@ class TestRectangleClass(unittest.TestCase):
         self.assertEqual(str_r, '[Rectangle] (3) 1/2 - 5/7')
 
     def test_update_method_args_kwargs(self):
+        """Rectangle update method unittest"""
         r17 = Rectangle(1, 1)
         r17.update(width=1, x=2)
         str_r = r17.__str__()
