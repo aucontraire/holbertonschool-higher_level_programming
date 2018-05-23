@@ -19,16 +19,16 @@ class TestBaseClass(unittest.TestCase):
         b1 = Base()
         b2 = Base()
         b3 = Base()
-        self.assertEqual(b1.id, 3)
-        self.assertEqual(b2.id, 4)
-        self.assertEqual(b3.id, 5)
+        self.assertEqual(b1.id, 7)
+        self.assertEqual(b2.id, 8)
+        self.assertEqual(b3.id, 9)
 
     def test_no_id_plus_id_combo(self):
         """Base class ids unittest"""
         b4 = Base(5)
         b5 = Base()
         self.assertEqual(b4.id, 5)
-        self.assertEqual(b5.id, 6)
+        self.assertEqual(b5.id, 10)
 
     def test_to_json_string(self):
         """to_json_string method unittest"""
@@ -55,8 +55,8 @@ class TestBaseClass(unittest.TestCase):
         self.assertIsInstance(dict_list, list)
         self.assertEqual(len(dict_list), 2)
         list_ref = [
-            {'id': 7, 'height': 7, 'x': 2, 'width': 10, 'y': 8},
-            {'id': 8, 'height': 4, 'x': 0, 'width': 2, 'y': 0}
+            {'id': 11, 'height': 7, 'x': 2, 'width': 10, 'y': 8},
+            {'id': 12, 'height': 4, 'x': 0, 'width': 2, 'y': 0}
         ]
         self.assertListEqual(dict_list, list_ref)
 

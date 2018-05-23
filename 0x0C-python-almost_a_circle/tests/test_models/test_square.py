@@ -93,7 +93,7 @@ class TestSquareClass(unittest.TestCase):
         sq12 = Square(3)
         d = sq12.to_dictionary()
         self.assertIsInstance(d, dict)
-        self.assertEqual(d['id'], 38)
+        self.assertEqual(d['id'], 42)
         self.assertEqual(d['size'], 3)
         self.assertEqual(d['x'], 0)
         self.assertEqual(d['y'], 0)

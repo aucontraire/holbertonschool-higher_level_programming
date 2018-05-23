@@ -23,18 +23,22 @@ class Rectangle(Base):
 
     @property
     def width(self):
+        """Rectangle width getter method"""
         return self.__width
 
     @property
     def height(self):
+        """Rectangle height getter method"""
         return self.__height
 
     @property
     def x(self):
+        """Rectangle x getter method"""
         return self.__x
 
     @property
     def y(self):
+        """Rectangle y getter method"""
         return self.__y
 
     @width.setter
