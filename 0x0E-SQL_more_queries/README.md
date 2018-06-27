@@ -12,3 +12,4 @@
 * 10-genre_id_by_show.sql: script that lists all shows contained in hbtn_0d_tvshows that have at least one genre linked
 * 11-genre_id_all_shows.sql: script that lists all shows contained in the database hbtn_0d_tvshows
 * 12-no_genre.sql: script that lists all shows contained in hbtn_0d_tvshows without a genre linked
+* 13-count_shows_by_genre.sql: script that lists all genres from hbtn_0d_tvshows and displays the number of shows linked to each
