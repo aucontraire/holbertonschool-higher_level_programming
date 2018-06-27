@@ -18,3 +18,4 @@
 * 16-no_link.sql: script that lists all records of the table second_table of the database hbtn_0c_0
 * 101-avg_temperatures.sql: script that displays the average temperature by city ordered by temperature (descending)
 * 102-top_city.sql: script that displays the top 3 of cities temperature during July and August ordered by temperature
+* 103-max_state.sql: script that displays the max temperature of each state (ordered by State name)
