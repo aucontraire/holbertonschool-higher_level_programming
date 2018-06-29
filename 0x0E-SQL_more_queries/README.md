@@ -17,3 +17,4 @@
 * 15-comedy_only.sql: script that lists all Comedy shows in the database hbtn_0d_tvshows
 * 16-shows_by_genre.sql: script that lists all shows, and all genres linked to that show, from the database hbtn_0d_tvshows
 * 100-not_my_genres.sql: script that uses the hbtn_0d_tvshows database to list all genres not linked to the show Dexter
+* 101-not_a_comedy.sql: script that lists all shows without the genre Comedy in the database hbtn_0d_tvshows
