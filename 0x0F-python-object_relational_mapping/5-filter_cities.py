@@ -13,7 +13,7 @@ if __name__ == '__main__':
         host="localhost",
         port=3306,
         user=sys.argv[1],
-        passwd=sys.argv[2],
+        #passwd=sys.argv[2],
         db=sys.argv[3],
         charset="utf8"
     )
@@ -23,12 +23,12 @@ if __name__ == '__main__':
     ORDER BY id ASC"""
     cur.execute(query, (sys.argv[4],))
     query_rows = cur.fetchall()
-    row_len = len(query_rows)
-    for i, row in enumerate(query_rows):
-        if row_len == 1 or i == row_len - 1:
-            print(row[0])
-        else:
-            print(row[0], end=", ")
+
+    query_list = []
+    for row in query_rows:
+        query_list.append(row[0])
+    state_str = ", ".join(query_list)
+    print(state_str)
 
     cur.close()
     conn.close()
