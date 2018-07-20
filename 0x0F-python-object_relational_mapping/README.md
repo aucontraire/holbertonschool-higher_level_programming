@@ -9,3 +9,4 @@
 * 7-model_state_fetch_all.py: script that lists all State objects from the database hbtn_0e_6_usa
 * 8-model_state_fetch_first.py: script that prints the first State object from the database hbtn_0e_6_usa
 * 9-model_state_filter_a.py: script that lists all State objects that contain the letter a from the database hbtn_0e_6_usa
+* 10-model_state_my_get.py: script that prints the State object with the name passed as argument from the database hbtn_0e_6_usa
