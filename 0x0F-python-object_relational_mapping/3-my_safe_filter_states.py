@@ -8,7 +8,6 @@
 if __name__ == '__main__':
     import sys
     import MySQLdb
-    import re
 
     conn = MySQLdb.connect(
         host="localhost",
@@ -19,13 +18,11 @@ if __name__ == '__main__':
         charset="utf8"
     )
     cur = conn.cursor()
-    re_apost = re.compile("(a?[^']+)")
-    state = re_apost.findall(sys.argv[4])
-    query = """SELECT * FROM states WHERE name = '{}' ORDER BY states.id ASC"""
-    cur.execute(query.format(sys.argv[4]))
+    query = """SELECT * FROM states WHERE name = %s ORDER BY states.id ASC"""
+    cur.execute(query, (sys.argv[4],))
     query_rows = cur.fetchall()
     for row in query_rows:
-        if row[1] == state[0]:
-            print(row)
+        print(row)
+
     cur.close()
     conn.close()
