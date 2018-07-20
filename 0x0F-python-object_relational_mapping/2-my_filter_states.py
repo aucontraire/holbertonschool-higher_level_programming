@@ -21,7 +21,7 @@ if __name__ == '__main__':
     cur.execute(query.format(sys.argv[4]))
     query_rows = cur.fetchall()
     for row in query_rows:
-        if row[1] == argv[4]:
+        if row[1] == sys.argv[4]:
             print(row)
     cur.close()
     conn.close()
