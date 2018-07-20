@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Lists all State objects from the database hbtn_0e_6_usa with letter a in name
+"""Lists all State objects from the database hbtn_0e_6_usa with
+   the letter 'a' in name
    takes 3 arguments: mysql-username, mysql-password, database-name
 """
 
@@ -16,5 +17,6 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    for state in session.query(State).filter(State.name.ilike('%a%')).order_by(State.id):
+    for state in session.query(State).filter(
+            State.name.ilike('%a%')).order_by(State.id):
         print("{}: {}".format(state.id, state.name))
