@@ -4,3 +4,4 @@
 * 2-delete.sh: bash script that sends a DELETE request
 * 3-methods.sh: takes in a URL and displays all HTTP methods the server will accept
 * 4-header.sh: script that takes in a URL as an argument, sends a GET request to the URL
+* 5-post_params.sh:  script that takes in a URL, sends a POST request to the passed URL
