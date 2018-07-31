@@ -1,0 +1,2 @@
+# find a peak complexity
+O(n)
