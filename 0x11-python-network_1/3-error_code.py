@@ -5,11 +5,12 @@
 if __name__ == '__main__':
     import sys
     import urllib.request
+    from urllib.error import URLError
 
     request = urllib.request.Request(sys.argv[1])
 
     try:
         response = urllib.request.urlopen(request)
         print(response.read().decode(encoding='utf-8'))
-    except Exception as error:
+    except URLError as error:
         print('Error code: {}'.format(error.getcode()))
