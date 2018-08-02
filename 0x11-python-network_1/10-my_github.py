@@ -10,7 +10,8 @@ if __name__ == '__main__':
     payload = {'login': sys.argv[1]}
     response = requests.get(url, params=payload, auth=(
         sys.argv[1], sys.argv[2])).json()
-    if response:
+
+    try:
         print(response['id'])
-    else:
+    except KeyError:
         print('None')
