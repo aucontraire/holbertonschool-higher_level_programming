@@ -3,3 +3,4 @@
 * 1-multi_languages.js: script that prints multi-language message
 * 2-arguments.js: script that prints a message depending of the number of arguments passed
 * 3-value_argument.js: script that prints the first argument passed to it
+* 4-concat.js: script that prints two arguments passed to it, in the following format: “ is ”
