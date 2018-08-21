@@ -1,12 +1,6 @@
 #!/usr/bin/node
-let no_args = true;
-process.argv.forEach((val, index) => {
-  if (index === 2) {
-    console.log(`${val}`);
-    no_args = false;
-  }
-});
-
-if (no_args) {
+if (process.argv[2] === undefined) {
   console.log('No argument');
+} else {
+  console.log(process.argv[2]);
 }
