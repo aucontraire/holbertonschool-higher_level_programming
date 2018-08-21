@@ -11,3 +11,4 @@
 * 9-add.js: script that prints the addition of 2 integers
 * 10-factorial.js: script that computes and prints a factorial
 * 11-second_biggest.js: script that searches the second biggest integer in the list of arguments
+* 12-object.js: script to replace 12 with 89
