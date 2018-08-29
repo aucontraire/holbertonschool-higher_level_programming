@@ -8,10 +8,10 @@ if (process.argv[2] === undefined || process.argv[3] === undefined) {
   process.argv.forEach((val, index) => {
     if (index > 1) {
       if (fmax < parseInt(val)) {
-	nmax = fmax;
-	fmax = parseInt(val);
+        nmax = fmax;
+        fmax = parseInt(val);
       } else if (parseInt(val) < fmax && parseInt(val) >= nmax) {
-	nmax = parseInt(val);
+        nmax = parseInt(val);
       }
     }
   });
