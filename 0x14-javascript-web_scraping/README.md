@@ -4,3 +4,4 @@
 * 2-statuscode.js: script that display the status code of a GET request
 * 3-starwars_title.js: script that prints the title of a Star Wars movie where the episode number matches a given integer
 * 4-starwars_count.js: script that prints the number of movies where the character “Wedge Antilles” is present
+* 5-request_store.js: script that gets the contents of a webpage and stores it in a file
