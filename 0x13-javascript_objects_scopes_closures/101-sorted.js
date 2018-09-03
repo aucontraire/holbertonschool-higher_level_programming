@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-let dict = require('./101-data').dict;
+let dict = require('./101-data.js').dict;
 let d = {};
 
 for (var k in dict) {
