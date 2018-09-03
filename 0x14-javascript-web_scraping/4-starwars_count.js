@@ -12,13 +12,15 @@ const options = {
 function callback (error, response, body) {
   if (!error && response.statusCode === 200) {
     const data = JSON.parse(body);
-    const charUrl = 'https://swapi.co/api/people/18/';
+    let r = /18/;
     const movies = data['results'];
     let i = 0;
     let count = 0;
     for (i = 0; i < movies.length; i++) {
-      if (movies[i]['characters'].indexOf(charUrl) > -1) {
-        count += 1;
+      for (let cindx in movies[i]['characters']) {
+        if (movies[i]['characters'][cindx].match(r)) {
+          count += 1;
+        }
       }
     }
     console.log(count);
