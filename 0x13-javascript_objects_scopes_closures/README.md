@@ -6,3 +6,4 @@
 * 4-rectangle.js: a class Rectangle with print, rotate, and double methods
 * 5-square.js: a class Square that inherits from Rectangle class
 * 6-square.js: a class Square with charPrint method
+* 7-occurrences.js: function that returns number of occurrences in a list
