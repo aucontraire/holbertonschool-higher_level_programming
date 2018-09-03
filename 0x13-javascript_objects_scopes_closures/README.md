@@ -4,3 +4,4 @@
 * 2-rectangle.js: a class Rectangle with two arguments width, height, with validation
 * 3-rectangle.js: a class Rectangle with two arguments, validation, and print method
 * 4-rectangle.js: a class Rectangle with print, rotate, and double methods
+* 5-square.js: a class Square that inherits from Rectangle class
