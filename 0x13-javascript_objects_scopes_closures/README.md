@@ -7,3 +7,5 @@
 * 5-square.js: a class Square that inherits from Rectangle class
 * 6-square.js: a class Square with charPrint method
 * 7-occurrences.js: function that returns number of occurrences in a list
+* 8-esrever.js: function that returns the reversed version of a list
+* 9-logme.js: function that prints the number of argument already printed and the new argument value
