@@ -12,3 +12,4 @@
 * 10-converter.js: function that converts a number from base 10 to another base passed as argument
 * 100-map.js: script that imports an array and computes a new array
 * 101-sorted.js: script that imports a dictionary of occurrences by user id and computes a dictionary of user ids by occurrence
+* 102-concat.js: script that concats 2 files
