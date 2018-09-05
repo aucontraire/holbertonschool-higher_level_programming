@@ -15,7 +15,7 @@ function callback (error, response, body) {
     let results = {};
     let i = 0;
     for (i = 0; i < data.length; i++) {
-      if (!(data[i]['userId'] in results)) {
+      if (!(data[i]['userId'] in results) && data[i]['completed']) {
         results[data[i]['userId']] = 0;
       }
       if (data[i]['completed']) {
