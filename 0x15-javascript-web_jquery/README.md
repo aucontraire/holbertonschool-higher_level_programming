@@ -9,3 +9,4 @@
 * 7-script.js: script that fetches and replaces the name of this URL: https://swapi.co/api/people/5/?format=json
 * 8-script.js: script that fetches and lists all movies title by using this URL: https://swapi.co/api/films/?format=json
 * 9-script.js: script that fetches and prints the San Francisco wind speed by using this URL: https://query.yahooapis.com/v1/public/yql?
+* 100-script.js: script that updates the text color of the HTML tag HEADER to red (#FF0000)
